@@ -22,6 +22,4 @@ class Pokemon
     self.new(result[0], result[1], result[2], db)
   end
 
-=======
->>>>>>> 97bb8d993966b0e79ede019439ca810e80b6d6a1
 end
