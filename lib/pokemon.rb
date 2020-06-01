@@ -1,13 +1,18 @@
 class Pokemon
   attr_accessor :id, :name, :type, :db
   
+<<<<<<< HEAD
   def initialize(id: nil, name:, type:, db:)  
+=======
+  def initialize(id:, name:, type:, db:)  
+>>>>>>> 97bb8d993966b0e79ede019439ca810e80b6d6a1
     @id = id
     @name = name
     @type = type
     @db = db
   end
   
+<<<<<<< HEAD
   def self.save(name, type, db)
     sql = "INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?);"
     @db[:conn].execute(sql, name, type, db)
@@ -20,4 +25,6 @@ class Pokemon
     self.new(result[0], result[1], result[2], db)
   end
 
+=======
+>>>>>>> 97bb8d993966b0e79ede019439ca810e80b6d6a1
 end
